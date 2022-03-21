@@ -1,0 +1,128 @@
+void main() {
+  int age = 30;
+  print(age);
+}
+
+void main() {
+ String name = "thirdy";
+  print(name);
+}
+
+
+void main() {
+ bool isNight = false;
+  print(isNight);
+}
+
+void main() {
+dynamic name = 'thirdy';
+  
+  print(name);
+}
+
+
+
+
+//
+
+void main() {
+  print('something');
+  String greet = greeting();
+  int age = getAge();
+  print(age);
+  print(greet);
+}
+
+String greeting(){
+  return 'hello';
+}
+
+int getAge(){
+  return 30;
+}
+
+
+
+String greeting() => 'hello';
+ 
+ay parehas lang nito 
+
+String greeting(){
+  return 'hello';
+}
+
+
+=> return value
+
+
+
+void main() {
+  print('something');
+  String greet = greeting();
+  int age = getAge();
+  print(age);
+  print(greet);
+}
+
+String greeting() => 'hello';
+
+int getAge() =>  30;
+
+
+
+void main() {
+  List names = ['thirdy', 'jose', 'max', 30];
+  
+  names.add('luigi');
+  names.remove('yoshi');
+  names.add(30);
+  print(names);
+}
+
+
+//Constructor
+
+
+void main(){
+  User userOne = User('luigi', 25);
+  print(userOne.username);
+    userOne.login();
+  
+  
+  User userTwo = User('thirdy', 16);
+  print(userTwo.username);
+  
+  SuperUser userThree = SuperUser('yoshi',20);
+  print(userThree.username);
+  userThree.publish();
+  userThree.login();
+  
+   
+  
+}
+
+
+class User{
+  
+    String username = " ";
+    int age = 0;
+  
+    User(String username, int age){
+    this.username = username;
+    this.age = age;  
+  }
+  
+    void login(){
+      print('user logged in');
+    }
+}
+
+//inheritance
+class SuperUser extends User{
+  
+  SuperUser(String username, int age): super(username,age);
+  
+    void publish(){
+        print('publish update');
+    }
+}
